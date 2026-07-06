@@ -48,6 +48,22 @@
   .brand img.brand-logotipo{height:34px;width:auto;}
   nav a{margin-left:26px;font-size:0.9rem;color:var(--navy);font-weight:500;letter-spacing:0.3px;}
   nav a:hover{color:var(--teal);}
+  .menu-toggle{
+    display:none;
+    background:none;
+    border:none;
+    cursor:pointer;
+    padding:6px;
+  }
+  .menu-toggle span{
+    display:block;
+    width:24px;
+    height:2px;
+    background:var(--navy);
+    margin:5px 0;
+    border-radius:2px;
+    transition:transform 0.2s ease, opacity 0.2s ease;
+  }
 
   /* Hero */
   .hero{
@@ -228,7 +244,21 @@
   .whatsapp-flotante svg{width:30px;height:30px;fill:#fff;}
 
   @media (max-width:640px){
-    nav{display:none;}
+    .menu-toggle{display:block;}
+    nav{
+      display:none;
+      position:absolute;
+      top:100%;
+      left:0;
+      right:0;
+      background:var(--blanco);
+      box-shadow:0 8px 16px rgba(21,104,132,0.12);
+      padding:10px 20px 18px;
+      flex-direction:column;
+    }
+    nav.open{display:flex;}
+    nav a{margin-left:0;padding:10px 0;border-bottom:1px solid #eef2f5;}
+    header .container{position:relative;}
     section{padding:44px 0;}
   }
 </style>
@@ -241,7 +271,10 @@
       <img class="brand-icon" src="icono.png" alt="Icono Dra. Abril Méndez">
       <img class="brand-logotipo" src="logotipo.png" alt="Dra. Abril Méndez - Ortopedia">
     </div>
-    <nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="mainNav">
       <a href="sobre-mi.html">Sobre mí</a>
       <a href="#servicios">Servicios</a>
       <a href="#ubicacion">Ubicación</a>
@@ -249,6 +282,22 @@
     </nav>
   </div>
 </header>
+<script>
+  (function(){
+    var toggle = document.getElementById('menuToggle');
+    var nav = document.getElementById('mainNav');
+    toggle.addEventListener('click', function(){
+      var isOpen = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+    nav.querySelectorAll('a').forEach(function(link){
+      link.addEventListener('click', function(){
+        nav.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  })();
+</script>
 
 <section id="servicios">
   <div class="container">
