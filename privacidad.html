@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aviso de Privacidad | Dra. Abril Méndez Pérez</title>
+<meta name="description" content="Aviso de privacidad del consultorio de la Dra. Abril Méndez Pérez, ortopedia y traumatología en Tarímbaro, Michoacán.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://dramendezortopedia.com/privacidad">
+
+<!-- ============ TIPOGRAFÍAS (Google Fonts, con respaldo del sistema) ============ -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
+
+<style>
+
+/* ============ 1. VARIABLES DE COLOR — TEMA CLARO (por defecto) ============ */
+:root{
+  --bg:#F3EFE6;
+  --papel:#FFFFFF;
+  --tinta:#222C2F;
+  --tinta-suave:#4B5A5E;
+  --acento:#15687C;
+  --acento-suave:#DCEFEA;
+  --linea:#E5E0D3;
+  --sombra:rgba(34,44,47,.10);
+  --chip:#F3F8F5;
+}
+
+/* ============ 2. VARIABLES DE COLOR — TEMA OSCURO ============ */
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#12181A;
+    --papel:#1B2226;
+    --tinta:#E9EEEE;
+    --tinta-suave:#AEBFC2;
+    --acento:#7CD6C9;
+    --acento-suave:#213333;
+    --linea:#2B3438;
+    --sombra:rgba(0,0,0,.45);
+    --chip:#1F2A2A;
+  }
+}
+
+/* ============ 3. BASE Y TIPOGRAFÍA ============ */
+*{box-sizing:border-box;}
+html{-webkit-text-size-adjust:100%;}
+body{
+  margin:0;
+  padding:56px 20px;
+  background:var(--bg);
+  color:var(--tinta);
+  font-family:'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size:16px;
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2{
+  font-family:'Source Serif 4', Georgia, 'Times New Roman', serif;
+  color:var(--tinta);
+  line-height:1.25;
+  margin:0 0 12px;
+}
+h1{font-size:clamp(28px,4vw,36px); font-weight:700;}
+h2{font-size:20px; font-weight:600; margin-top:40px; padding-top:18px; border-top:1px solid var(--linea);}
+h2:first-of-type{margin-top:32px;}
+p{margin:0 0 16px; color:var(--tinta-suave);}
+strong{color:var(--tinta); font-weight:600;}
+ul{margin:0 0 16px; padding-left:22px; color:var(--tinta-suave);}
+li{margin-bottom:8px;}
+a{color:var(--acento); font-weight:600; text-decoration:none; border-bottom:1.5px solid var(--acento-suave);}
+a:hover{border-bottom-color:var(--acento);}
+
+/* ============ 4. LA "HOJA" — CONTENEDOR PRINCIPAL ============ */
+.hoja{
+  max-width:760px;
+  margin:0 auto;
+  background:var(--papel);
+  border-radius:20px;
+  box-shadow:0 24px 70px var(--sombra);
+  padding:60px 68px 56px;
+  border:1px solid var(--linea);
+}
+
+/* ============ 5. ENCABEZADO DEL DOCUMENTO ============ */
+.volver{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  font-size:14px;
+  font-weight:700;
+  color:var(--tinta-suave);
+  border-bottom:none;
+  margin-bottom:28px;
+}
+.volver:hover{color:var(--acento);}
+.eyebrow{
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  color:var(--acento);
+  margin-bottom:10px;
+}
+.fechado{
+  font-size:14px;
+  color:var(--tinta-suave);
+  margin:10px 0 0;
+}
+.intro{
+  font-size:16.5px;
+  margin-top:20px;
+  padding-bottom:24px;
+  border-bottom:1px solid var(--linea);
+}
+
+/* ============ 6. TARJETA DE DATOS DE CONTACTO ============ */
+.contacto{
+  background:var(--chip);
+  border-radius:14px;
+  padding:22px 26px;
+  margin:18px 0 8px;
+  display:grid;
+  gap:10px;
+  font-size:15px;
+}
+.contacto div{display:flex; gap:8px; flex-wrap:wrap;}
+.contacto span.etiqueta{color:var(--tinta-suave); min-width:118px; font-weight:600;}
+
+/* ============ 7. PIE DEL DOCUMENTO ============ */
+.pie-doc{
+  margin-top:44px;
+  padding-top:22px;
+  border-top:1px solid var(--linea);
+  font-size:13px;
+  color:var(--tinta-suave);
+}
+
+/* ============ 8. RESPONSIVO ============ */
+@media (max-width:640px){
+  body{padding:0;}
+  .hoja{
+    border-radius:0;
+    border:none;
+    box-shadow:none;
+    padding:40px 24px 48px;
+  }
+  h2{margin-top:32px;}
+  .contacto{padding:18px 20px;}
+  .contacto span.etiqueta{min-width:100%;}
+}
+
+/* ============ 9. IMPRESIÓN ============ */
+@media print{
+  body{background:#fff; padding:0; font-size:12.5pt;}
+  .hoja{box-shadow:none; border:none; border-radius:0; max-width:100%; padding:0;}
+  .volver{display:none;}
+  a{color:inherit; border-bottom:1px solid #999;}
+  h2{break-after:avoid;}
+  li,.contacto{break-inside:avoid;}
+}
+</style>
+</head>
+<body>
+<div class="hoja">
+
+  <a class="volver" href="/">← Volver al sitio</a>
+
+  <div class="eyebrow">Consultorio Dra. Abril Méndez Pérez</div>
+  <h1>Aviso de Privacidad</h1>
+  <p class="fechado">Última actualización: 21 de agosto de 2026</p>
+
+  <p class="intro">Este aviso explica qué datos personales recaba el consultorio de la
+  Dra. Abril Méndez Pérez, para qué se usan, con quién se comparten y cómo puede
+  ejercer sus derechos sobre ellos, de conformidad con la Ley Federal de Protección
+  de Datos Personales en Posesión de los Particulares y su Reglamento.</p>
+
+  <h2>1. Identidad y domicilio del responsable</h2>
+  <p>La <strong>Dra. Abril Méndez Pérez</strong>, médico especialista en Ortopedia y
+  Traumatología, con domicilio de atención en Hospital SOMAPLUS, C. Armonía 125,
+  Galaxia Tarímbaro, C.P. 58880, Tarímbaro, Michoacán, es la responsable del
+  tratamiento de sus datos personales conforme a este aviso.</p>
+
+  <h2>2. Datos personales que se recaban</h2>
+  <p>Dependiendo de cómo interactúa con el consultorio (WhatsApp, formulario de
+  contacto, atención presencial), podemos recabar:</p>
+  <ul>
+    <li><strong>Datos de identificación y contacto:</strong> nombre, fecha de
+    nacimiento, teléfono, correo electrónico.</li>
+    <li><strong>Datos de la cita:</strong> motivo de consulta, fecha y hora
+    agendada, historial de citas.</li>
+    <li><strong>Datos de salud:</strong> padecimientos, diagnósticos, estudios,
+    tratamientos y demás información clínica necesaria para su atención médica.
+    Estos son <strong>datos personales sensibles</strong> y reciben un tratamiento
+    reforzado conforme a la ley.</li>
+  </ul>
+  <p>El tratamiento de sus datos de salud requiere su <strong>consentimiento
+  expreso</strong>, mismo que se recaba al agendar una cita o al iniciar una
+  conversación por WhatsApp con el consultorio.</p>
+
+  <h2>3. Finalidades del tratamiento</h2>
+  <p><strong>Finalidades primarias</strong> (necesarias para atenderle; sin ellas no
+  podemos prestarle el servicio):</p>
+  <ul>
+    <li>Agendar, confirmar, reprogramar o cancelar su cita.</li>
+    <li>Brindarle atención médica y dar seguimiento a su tratamiento.</li>
+    <li>Integrar y conservar su expediente clínico conforme a la normativa
+    sanitaria aplicable.</li>
+    <li>Facturación y cobro de honorarios, cuando aplique.</li>
+  </ul>
+  <p><strong>Finalidades secundarias</strong> (opcionales, no condicionan la
+  atención médica):</p>
+  <ul>
+    <li>Enviarle recordatorios de citas e información logística relacionada
+    (ubicación, horarios, qué llevar).</li>
+    <li>Compartir información general del consultorio, únicamente por los canales
+    y plantillas autorizados por Meta/WhatsApp.</li>
+  </ul>
+  <p>Si no desea que sus datos se usen para las finalidades secundarias, puede
+  manifestarlo por cualquiera de los medios de contacto señalados en la sección 7,
+  sin que esto afecte su atención médica.</p>
+
+  <h2>4. Transferencias de datos</h2>
+  <p>No vendemos ni rentamos sus datos personales. Para poder operar, compartimos
+  información limitada con proveedores que actúan como <strong>encargados</strong>
+  del tratamiento, únicamente para prestar el servicio contratado con ellos:</p>
+  <ul>
+    <li><strong>WhatsApp Business Platform (Meta) y ManyChat:</strong> para
+    recibir y responder sus mensajes y gestionar el agendamiento por WhatsApp.</li>
+    <li><strong>Supabase:</strong> almacenamiento seguro de la base de datos de
+    citas y contacto.</li>
+    <li><strong>Vercel:</strong> alojamiento del sitio web.</li>
+    <li><strong>Google Maps y Google Fonts:</strong> para mostrar la ubicación del
+    consultorio y las tipografías de este sitio; estos servicios pueden recibir
+    datos técnicos de su navegador (por ejemplo, la dirección IP) conforme a la
+    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">política de privacidad de Google</a>.</li>
+  </ul>
+  <p>No se realizan otras transferencias de sus datos personales sin su
+  consentimiento, salvo las excepciones previstas por la ley (por ejemplo, un
+  requerimiento de autoridad competente).</p>
+
+  <h2>5. Cómo protegemos sus datos</h2>
+  <p>Aplicamos medidas administrativas, técnicas y físicas razonables para
+  proteger sus datos personales contra daño, pérdida, alteración, acceso o
+  tratamiento no autorizado, incluyendo el acceso restringido a su expediente y el
+  uso de proveedores con controles de seguridad propios.</p>
+
+  <h2>6. Derechos ARCO y revocación del consentimiento</h2>
+  <p>Usted tiene derecho a <strong>Acceder</strong> a sus datos personales,
+  <strong>Rectificarlos</strong> si son inexactos, <strong>Cancelarlos</strong>
+  cuando considere que no se requieren para las finalidades señaladas, y
+  <strong>Oponerse</strong> al tratamiento de los mismos para fines específicos
+  (derechos ARCO). También puede <strong>revocar su consentimiento</strong> o
+  solicitar que limitemos el uso o divulgación de su información en cualquier
+  momento.</p>
+  <p>Para ejercer cualquiera de estos derechos, escríbanos por correo o WhatsApp
+  (sección 7) indicando su nombre y el derecho que desea ejercer. Le daremos
+  respuesta dentro de los plazos previstos por la ley.</p>
+
+  <h2>7. Contacto</h2>
+  <p>Para dudas sobre este aviso o para ejercer sus derechos:</p>
+  <div class="contacto">
+    <div><span class="etiqueta">Correo</span><a href="mailto:dramendez.abril@outlook.com">dramendez.abril@outlook.com</a></div>
+    <div><span class="etiqueta">WhatsApp</span><a href="https://wa.me/524431731947">+52 443 173 1947</a></div>
+    <div><span class="etiqueta">Domicilio</span><span>Hospital SOMAPLUS, C. Armonía 125, Galaxia Tarímbaro, C.P. 58880, Tarímbaro, Michoacán</span></div>
+  </div>
+  <p style="margin-top:14px; font-size:14px;">Si considera que su derecho a la
+  protección de datos personales ha sido vulnerado, puede acudir al Instituto
+  Nacional de Transparencia, Acceso a la Información y Protección de Datos
+  Personales (INAI/institución competente).</p>
+
+  <h2>8. Cambios a este aviso de privacidad</h2>
+  <p>Este aviso puede actualizarse por cambios en nuestros servicios, en la
+  normativa aplicable o en nuestras prácticas de privacidad. La versión vigente
+  siempre estará disponible en esta misma dirección, con la fecha de última
+  actualización indicada al inicio.</p>
+
+  <div class="pie-doc">
+    Dra. Abril Méndez Pérez · Ortopedia y Traumatología · Tarímbaro, Michoacán
+  </div>
+
+</div>
+</body>
+</html>

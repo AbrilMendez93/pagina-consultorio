@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/privacidad", "destination": "/privacidad.html" }
+  ]
+}
